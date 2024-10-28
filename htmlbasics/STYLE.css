@@ -1,16 +1,16 @@
 h1, h2 {
-    color: green;
+    color: darkorange;
   }
   
   p {
-    color: gray;
+    color: burlywood;
   }
   ul {
     border: 2px solid black;
   }
   
   ol {
-    border: 2px solid purple;
+    border: 2px solid lightslategray;
   }
   
   ol, ul {
@@ -18,7 +18,7 @@ h1, h2 {
     border-radius: 4px;
   }
   h1, strong {
-    color: purple;
+    color: lightsalmon;
   }
   
   em {
