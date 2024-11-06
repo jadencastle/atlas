@@ -2,7 +2,20 @@
 
 
 /* form styling */
+html {
+	background-color: #33333336;
+}
 
+label {
+	margin-right: .3em;
+	width: 5em;
+	display: inline-block;
+	text-align: right;
+}
+
+#formcol1 li {
+	list-style:none;
+	}
 
 #wrapper {
 	width: 60%;
@@ -14,7 +27,14 @@ div#formcol1 {
 	width: 100%;
 }
 
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important;
+background-color: #BB3D2F !important;}
 
+#formcol1 input.reqfield {
+	background:#FF9;
+}
 
 /* end of form css */
 	
