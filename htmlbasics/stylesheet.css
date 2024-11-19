@@ -1,5 +1,10 @@
+
+
+
 h1, h2 {
     color: darkorange;
+    width: 100%; /* Headings span full width */
+    margin-top: 0;
   }
   
   p {
@@ -25,4 +30,13 @@ h1, h2 {
     color: black;
   }
       
-      
+  .animal {
+    flex: 1; /* Allows each animal section to take up equal space */
+    min-width: 300px; /* Ensures sections stack vertically if viewport is too narrow */
+}
+.container {
+  display: flex;
+  gap: 20px; /* Space between columns */
+  padding: 20px;
+  align-items: flex-start; /* Aligns items at the top */
+}
