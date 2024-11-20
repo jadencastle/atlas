@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Define a fixed height for the nav */
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays above other elements */
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Navigation List Styles */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 18px; /* Increase font size */
+    font-family: 'Roboto', sans-serif; /* Change font */
+    /* font-weight: bold; Optional: Make text bold */
+}
+
+/* Dropdown Styles */
+.nav-item ul {
+    display: none; /* Hide dropdown initially */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-item:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+.nav-item ul .nav-link {
+    padding: 10px 15px;
+    width: 200px; /* Optional: Adjust width for dropdown links */
+}

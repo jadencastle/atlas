@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Flatirons Golf Course</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/final/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Sidebar (Optional Toggle) -->
+<nav class="nav" id="sidebar" style="display: none;">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link 4</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link 5</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Navbar -->
+  <div class="nav">
+    <!-- <a href="#" class="nav-link"><i class="fa fa-home"></i> Logo</a> -->
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Golf Course <i class="fa fa-caret-down"></i></a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Golf Course Overview</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Golf Fees + Passes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Photo Gallery</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Golf Course Flyover</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Driving Range + Practice Areas</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Lessons and Instructions</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Tournaments + Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Flatirons Golf App</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Scoreboard + Policies</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#bar" class="nav-link">Ironwood Bar and Grille</a></li>
+      <li class="nav-item"><a href="#teetime" class="nav-link">Book Your Tee Time</a></li>
+      <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a></li> -->
+    </ul>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity" style="position: relative;">
+    <img src="/final/gc.jpg" alt="golf course" style="width:100%;min-height:350px;max-height:600px;">
+    
+    <!-- Text and Button in Bottom Left -->
+    <div class="w3-display-bottomleft w3-container" 
+         style="color: white; margin: 20px;">
+      <h1 style="font-size: 4rem; font-weight: bold; margin: 0;">Welcome to Flatirons Golf</h1>
+      <p style="font-size: 2.2rem; margin: 0; ">An historic 18-hole golf course</p>
+      <button onclick="document.getElementById('id01').style.display='block'" 
+              class="w3-button w3-large w3-theme w3-hover-lightgreen"
+              style="border: 2px solid lightgreen; background-color: lightgreen; color: black; padding: 10px 20px; font-size: 1rem; cursor: pointer;">Book Your Tee Time</button>
+    </div>
+  </div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team" style="margin: 20px;">
+    <h2>Join us at Flatirons Golf Course for a round of golf, or to practice and work on your game. Enjoy the beautiful setting, where everyone is welcome.</h2>
+  
+    <div id="section-32538" class="paragraph paragraph--type--iframe paragraph--view-mode--default" style="margin-top: 20px;">
+      <div class="field field--name-field-iframe field--type-iframe field--label-hidden field__item">
+        <style type="text/css">
+          iframe#iframe-field_iframe-32538 {
+            /*frameborder*/
+            border-width: 0;
+            /*scrolling*/
+            overflow: auto;
+          }
+        </style>
+        <iframe 
+          width="100%" 
+          height="600" 
+          name="iframe-field_iframe-32538" 
+          id="iframe-field_iframe-32538" 
+          title="Book Your Tee Time" 
+          allow="accelerometer;autoplay;camera;encrypted-media;geolocation;gyroscope;microphone;payment;picture-in-picture" 
+          allowfullscreen="allowfullscreen" 
+          src="https://flatironsgolf.cps.golf/onlineresweb/search-teetime?TeeOffTimeMin=0&amp;TeeOffTimeMax=23">
+          Your browser does not support iframes, but you can visit 
+          <a href="https://flatironsgolf.cps.golf/onlineresweb/search-teetime?TeeOffTimeMin=0&amp;TeeOffTimeMax=23">Book Your Tee Time</a>
+        </iframe>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contact-info" style="padding: 20px; background-color: #f8f8f8; border-radius: 8px;">
+    <h2 style="text-align: center; margin:40px;">Contact Flatirons Golf Course</h2>
+    <div class="flex-container" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+      <div class="contact-item" style="flex: 1 1 300px; text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: white;">
+        <h3>Phone</h3>
+        <p><strong>303-442-7851</strong></p>
+      </div>
+      <div class="contact-item  " style="flex: 1 1 300px; text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: white;">
+        <h3>Email</h3>
+        <p><a href="mailto:FlatironsGolf@bouldercolorado.gov" style="text-decoration: none; font-weight: bold; ">FlatironsGolf@bouldercolorado.gov</a></p>
+      </div>
+      <div class="contact-item" style="flex: 1 1 300px; text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: white;">
+        <h3>Address</h3>
+        <p><strong>5706 Arapahoe Ave.<br>Boulder, CO 80303</strong></p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<!-- Footer -->
+<footer class="footer" style="padding: 20px; background-color: #333; color: white;">
+    <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; align-items: center; max-width: 1200px; margin: 0 auto;">
+      
+      <!-- Links Section -->
+      <div class="footer-links" style="flex: 1 1 300px;">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 15px;">
+          <li><a href="#" style="color: white; text-decoration: none;">Calendar</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Locations</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Services</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">News</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Government</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Accessibility</a></li>
+        </ul>
+      </div>
+  
+      <!-- Address Section -->
+      <div class="footer-address" style="flex: 1 1 300px; text-align: center;">
+        <p style="margin: 0;">1777 Broadway<br>Boulder, CO 80302</p>
+      </div>
+  
+      <!-- Contact Section -->
+      <div class="footer-contact" style="flex: 1 1 300px; text-align: center;">
+        <p style="margin: 0;"><a href="#" style="color: white; text-decoration: none;">Contact</a></p>
+      </div>
+  
+    </div>
+  </footer>
+  
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
