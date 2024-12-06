@@ -19,6 +19,7 @@ body {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 
+
 /* Navigation List Styles */
 .nav-list {
     list-style-type: none;
@@ -33,10 +34,20 @@ body {
     color: black; /* Text color */
     text-decoration: none; /* Remove underline */
     padding: 14px 20px;
+    position: relative; /* Ensure focus box doesn't shift text */
     display: inline-block;
+    border: none; /* Remove default borders */
+    outline: none; /* Remove default focus outline */
+    transition: outline 0.2s, box-shadow 0.2s; /* Smooth transitions */
     font-size: 18px; /* Increase font size */
     font-family: 'Roboto', sans-serif; /* Change font */
     /* font-weight: bold; Optional: Make text bold */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    outline: 2px solid blue; /* Blue outline for focus/hover */
+    border-radius: 4px; /* Optional: Add rounding for smooth corners */
 }
 
 /* Dropdown Styles */
