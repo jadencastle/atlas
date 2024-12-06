@@ -8,15 +8,15 @@ body {
 .nav {
     position: absolute;
     top: 0;
-    width: 100%; 
+    width: 100%; /* Full width */
+    height: 60px; /* Define a fixed height for the nav */
     background-color: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 1000; 
-    padding: 10px 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; 
+    z-index: 1000; /* Ensure it stays above other elements */
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 
 /* Navigation List Styles */
@@ -25,92 +25,36 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 15px; 
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    width: 100%;
+    gap: 20px; /* Space between nav items */
 }
 
 /* Navigation Link Styles */
 .nav-link {
-    color: black; 
-    text-decoration: none; 
-    padding: 10px 15px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    background-color: lightgray;
-    border-radius: 4px;
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 18px; /* Increase font size */
+    font-family: 'Roboto', sans-serif; /* Change font */
+    /* font-weight: bold; Optional: Make text bold */
 }
 
 /* Dropdown Styles */
 .nav-item ul {
-    display: none; 
+    display: none; /* Hide dropdown initially */
     position: absolute;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
     list-style: none;
     margin: 0;
-    z-index: 1001;
 }
 
 .nav-item:hover ul {
-    display: block; 
+    display: block; /* Show dropdown on hover */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column; 
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .nav-list {
-        flex-direction: column; 
-        gap: 10px;
-    }
-
-    .nav-link {
-        font-size: 14px;
-        padding: 8px 10px; 
-    }
-
-    .nav-item ul {
-        position: static; 
-        margin-top: 5px;
-    }
-}
-
-/* iPhone Specific Adjustments */
-@media (max-width: 375px) {
-    .nav {
-        padding: 10px;
-    }
-
-    .nav-link {
-        font-size: 12px;
-        padding: 8px 10px;
-    }
-
-    h1 {
-        font-size: 2rem; 
-        line-height: 1.2;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    button {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
+.nav-item ul .nav-link {
+    padding: 10px 15px;
+    width: 200px; /* Optional: Adjust width for dropdown links */
 }
